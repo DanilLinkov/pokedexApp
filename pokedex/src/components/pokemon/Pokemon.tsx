@@ -147,7 +147,7 @@ const Pokemon = (props: RouteComponentProps<any>) => {
               <Grid container item direction="row" justify="center" alignItems="center">
                 <Grid item container direction="row" justify="space-between" alignItems="center">
 
-                  <Grid item><Typography>HP :</Typography></Grid>
+                  <Grid item><Typography>Hp :</Typography></Grid>
                   <Grid item></Grid><div style={{width:"420px"}}><ProgressBar bgcolor={"#24a19c"} completed={hp} /></div></Grid>
 
                 <Grid item container direction="row" justify="space-between" alignItems="center">
