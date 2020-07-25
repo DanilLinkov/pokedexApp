@@ -53,11 +53,11 @@ const SearchBar = (props: ISearchBarProps) => {
 
     const [GenFilter, setGenFilter] = useState<IUserInput["GenFilter"]>({
         gen1: true,
-        gen2: false,
-        gen3: false,
-        gen4: false,
-        gen5: false,
-        gen6: false,
+        gen2: true,
+        gen3: true,
+        gen4: true,
+        gen5: true,
+        gen6: true,
     });
 
     const handleGenFilterChnage = (event: React.ChangeEvent<HTMLInputElement>) => {
