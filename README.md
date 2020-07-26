@@ -15,5 +15,5 @@ url: https://pokedexapp.azurewebsites.net/
 
 ##### This was deployed using azure pipeline
 
-The build pipeline archives and publishes the build artifact whenever a the master branch is updated
+The build pipeline archives and publishes the build artifact whenever the master branch is updated
 and the release pipeline deploys the project in order to create a continuous deployment.
