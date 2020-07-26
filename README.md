@@ -3,7 +3,7 @@
 url: https://pokedexapp.azurewebsites.net/
 
 ## Features
-##### -This react typescript app contains 2 pages a pokedex page and a pokemon page for each pokemon achieved using react router.
+##### -This react typescript app contains 2 pages a pokedex page and a pokemon page for each pokemon, achieved using react router.
 
 ##### -Pokedex page displaying 721 pokemon from generation 1 to generation 6 using PokeApi (https://pokeapi.co/).
 
