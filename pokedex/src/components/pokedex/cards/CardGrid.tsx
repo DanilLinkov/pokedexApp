@@ -54,7 +54,7 @@ const CardGrid = (props:ICardGridProps) => {
             const newPokemonData:ICards = {};
             results.forEach((pokemon:(IPokemonApiInfo),index:number) =>{
                     let pokemonIdNumber:number = index+1;
-                    if(pokemon.name!.includes(props.SearchQuery!))
+                    if(pokemon.name?.toLowerCase()!.includes(props.SearchQuery?.toLowerCase()!))
                     {
                         if((props.GenFilter.gen1 && (pokemonIdNumber>=1) && (pokemonIdNumber<=151)) || 
                         (props.GenFilter.gen2 && (pokemonIdNumber>=152) && (pokemonIdNumber<=251)) || 
