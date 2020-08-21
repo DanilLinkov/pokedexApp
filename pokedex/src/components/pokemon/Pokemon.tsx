@@ -184,9 +184,9 @@ const Pokemon = (props: RouteComponentProps<any>) => {
           <Grid container direction="row" justify="center" alignItems="center" spacing={8}>
             <Grid container item xs={5} spacing={8}>
               <Grid container item direction="row" justify="center" alignItems="center">
-                <Grid item container direction="row" justify="space-between" alignItems="center"><Grid item><Typography>Height:</Typography></Grid><Grid item><Typography>{height}</Typography></Grid></Grid>
-                <Grid item container direction="row" justify="space-between" alignItems="center"><Grid item><Typography>Weight:</Typography></Grid><Grid item><Typography>{weight}</Typography></Grid></Grid>
-                <Grid item container direction="row" justify="space-between" alignItems="center"><Grid item><Typography>Catch Rate:</Typography></Grid><Grid item><Typography>{catchRate}</Typography></Grid></Grid>
+                <Grid item container direction="row" justify="space-between" alignItems="center"><Grid item><Typography>Height:</Typography></Grid><Grid item><Typography>{height} ft</Typography></Grid></Grid>
+                <Grid item container direction="row" justify="space-between" alignItems="center"><Grid item><Typography>Weight:</Typography></Grid><Grid item><Typography>{weight} lbs</Typography></Grid></Grid>
+                <Grid item container direction="row" justify="space-between" alignItems="center"><Grid item><Typography>Catch Rate:</Typography></Grid><Grid item><Typography>{catchRate}%</Typography></Grid></Grid>
                 <Grid item container direction="row" justify="space-between" alignItems="center"><Grid item><Typography>Gender Ratio:</Typography></Grid><Grid item><Typography>{genderRatioMale}/{genderRatioFemale} (M/F)</Typography></Grid></Grid>
               </Grid>
             </Grid>
