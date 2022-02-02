@@ -13,27 +13,26 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    # checkout the repo
-    - name: 'Checkout Github Action'
-      uses: actions/checkout@master
+      # checkout the repo
+      - name: "Checkout Github Action"
+        uses: actions/checkout@master
 
+      - name: Set up Node.js version
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.13.0"
 
-    - name: Set up Node.js version
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12.13.0'
+      - name: npm install, build, and test
+        run: |
+          cd ./pokedex
+          npm install
+          npm run build --if-present
+          npm run test --if-present
 
-    - name: npm install, build, and test
-      run: |
-        npm install
-        npm run build --if-present
-        npm run test --if-present
-
-    - name: Run Azure webapp deploy action using publish profile credentials
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: pokedexApp
-        slot-name: Production
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_82AAB8061D384E15833CB6729E88883E }}
-        package: .
-
+      - name: Run Azure webapp deploy action using publish profile credentials
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: pokedexApp
+          slot-name: Production
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_82AAB8061D384E15833CB6729E88883E }}
+          package: .
